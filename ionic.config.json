@@ -1,0 +1,7 @@
+{
+  "name": "BluCroftt",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
