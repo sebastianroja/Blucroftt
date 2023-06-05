@@ -9,10 +9,9 @@ export class PremiumSubscriptionPagePage {
 
   constructor() { }
 
-  // Método para suscribirse a la cuenta premium
+  
   subscribe() {
-    // Lógica para procesar la suscripción premium
-    // Puedes mostrar mensajes, realizar pagos, etc.
+    
     console.log('Suscripción realizada');
   }
 

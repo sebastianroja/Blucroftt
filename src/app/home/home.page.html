@@ -5,9 +5,7 @@
       Home
     </ion-title>
     <ion-buttons slot="end">
-      <ion-button (click)="toggleOptions()">
-        
-      </ion-button>
+      <ion-button (click)="toggleOptions()" ></ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -32,7 +30,7 @@
         <ion-icon name="star"></ion-icon>
         <ion-label>Suscripción Premium</ion-label>
       </ion-item>
-      <ion-button routerLink="/contact-us">
+      <ion-button routerLink="/contact-us" class="pulse-animation">
         <ion-icon name="chatbubbles"></ion-icon>
         <ion-label>Contacto y Colaboración</ion-label>
       </ion-button>
@@ -48,7 +46,7 @@
     <ion-card-content>
       <p><strong>Nombre:</strong> {{ nombre }}</p>
       <p><strong>Correo:</strong> {{ correo }}</p>
-      <!-- Si deseas mostrar más información de la cuenta, puedes agregar más campos aquí -->
+     
     </ion-card-content>
   </ion-card>
 
@@ -59,7 +57,9 @@
     <ion-card-content>
       <p>Somos una plataforma dedicada a recopilar información sobre fugas de agua y facilitar su reporte a las autoridades municipales. Nuestro objetivo es contribuir a la conservación del agua y promover la pronta reparación de las fugas para evitar desperdicios y daños a la infraestructura.</p>
       <p>Con nuestra aplicación, puedes reportar fácilmente las fugas de agua que encuentres en tu área. Además, brindamos información actualizada sobre el estado de las fugas reportadas y ofrecemos alertas a conductores para evitar posibles daños a sus vehículos.</p>
-      <!-- Puedes agregar más información relevante sobre el servicio aquí -->
+      
     </ion-card-content>
   </ion-card>
+
+  <div class="square" #square></div>
 </ion-content>

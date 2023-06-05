@@ -35,7 +35,7 @@ export class AddLocationPage {
 
     const toast = await this.toastController.create({
       message: 'Fuga de agua registrada correctamente',
-      duration: 2000, // Duración en milisegundos
+      duration: 2000, 
     });
 
     await toast.present();
