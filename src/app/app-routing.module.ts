@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+
 const routes: Routes = [
   {
     path: 'home',
@@ -23,6 +24,19 @@ const routes: Routes = [
     path: 'add-location',
     loadChildren: () => import('./add-location/add-location.module').then( m => m.AddLocationPageModule)
   },
+  {
+    path: 'fuga-list',
+    loadChildren: () => import('./fuga-list/fuga-list.module').then( m => m.FugaListPageModule)
+  },
+  {
+    path: 'premium-subscription-page',
+    loadChildren: () => import('./premium-subscription-page/premium-subscription-page.module').then( m => m.PremiumSubscriptionPagePageModule)
+  },
+  {
+    path: 'contact-us',
+    loadChildren: () => import('./contact-us/contact-us.module').then( m => m.ContactUsPageModule)
+  },
+  
 ];
 
 @NgModule({

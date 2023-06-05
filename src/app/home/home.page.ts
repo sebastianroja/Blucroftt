@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,12 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  nombre: string='';
-  correo: string='';
+  nombre: string = '';
+  correo: string = '';
+  showOptions: boolean = false;
 
-  constructor() {
-
-    
+  constructor(private router: Router) {
     // Obtener los datos del usuario desde el almacenamiento local
     const userData = localStorage.getItem('userData');
     if (userData) {
@@ -19,5 +19,13 @@ export class HomePage {
       this.nombre = user.name;
       this.correo = user.email;
     }
+  }
+
+  navigateTo(url: string) {
+    this.router.navigateByUrl(url);
+  }
+
+  toggleOptions() {
+    this.showOptions = !this.showOptions;
   }
 }
