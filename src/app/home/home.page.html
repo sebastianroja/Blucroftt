@@ -1,7 +1,8 @@
-<<ion-header [translucent]="true">
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button routerLink="/add-location">
+        <ion-icon name="location-sharp"></ion-icon>
         Añadir Fuga
       </ion-button>
     </ion-buttons>
@@ -10,14 +11,15 @@
     </ion-title>
     <ion-buttons slot="end">
       <ion-button routerLink="/fuga-list">
+        <ion-icon name="list"></ion-icon>
         Lista de Fugas
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-card>
+<ion-content fullscreen="true">
+  <ion-card class="custom-card">
     <ion-card-header>
       <ion-card-title>Tus datos de cuenta</ion-card-title>
     </ion-card-header>
@@ -28,7 +30,7 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card>
+  <ion-card class="custom-card">
     <ion-card-header>
       <ion-card-title>Sobre nuestro servicio</ion-card-title>
     </ion-card-header>
@@ -38,5 +40,4 @@
       <!-- Puedes agregar más información relevante sobre el servicio aquí -->
     </ion-card-content>
   </ion-card>
-  
 </ion-content>

@@ -23,7 +23,7 @@ export class RegisterPage {
     this.limpiarCampos();
 
     // Redirigir a la página de inicio
-    this.router.navigate(['/home'], { queryParams: this.formData });
+    this.router.navigate(['/login'], { queryParams: this.formData });
 
     // Mostrar mensaje de éxito
     alert('Registro exitoso');

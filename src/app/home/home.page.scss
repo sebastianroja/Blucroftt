@@ -1,27 +1,29 @@
-#container {
+.container {
+  background-color: #00bcd4; /* Celeste */
+  padding: 20px;
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+h1 {
+  font-size: 24px;
+  color: #fff; /* Texto en blanco */
 }
 
-#container p {
+p {
   font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+  color: #fff; /* Texto en blanco */
 }
 
-#container a {
-  text-decoration: none;
+ion-button {
+  margin-top: 20px;
+  --background: #26a69a; /* Turquesa */
+  --color: #fff; /* Texto en blanco */
+}
+
+ion-content {
+  --background-color: #E0F2F1; /* Color de fondo personalizado */
+}
+
+ion-card.custom-card {
+  --background-color: #B2DFDB; /* Color de fondo personalizado para las tarjetas */
 }
