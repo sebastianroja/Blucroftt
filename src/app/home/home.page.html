@@ -1,20 +1,42 @@
-<ion-header [translucent]="true">
+<<ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/add-location">
+        Añadir Fuga
+      </ion-button>
+    </ion-buttons>
     <ion-title>
-      Blank
+      Home
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/fuga-list">
+        Lista de Fugas
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Tus datos de cuenta</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Nombre:</strong> {{ nombre }}</p>
+      <p><strong>Correo:</strong> {{ correo }}</p>
+      <!-- Si deseas mostrar más información de la cuenta, puedes agregar más campos aquí -->
+    </ion-card-content>
+  </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Sobre nuestro servicio</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Somos una plataforma dedicada a recopilar información sobre fugas de agua y facilitar su reporte a las autoridades municipales. Nuestro objetivo es contribuir a la conservación del agua y promover la pronta reparación de las fugas para evitar desperdicios y daños a la infraestructura.</p>
+      <p>Con nuestra aplicación, puedes reportar fácilmente las fugas de agua que encuentres en tu área. Además, brindamos información actualizada sobre el estado de las fugas reportadas y ofrecemos alertas a conductores para evitar posibles daños a sus vehículos.</p>
+      <!-- Puedes agregar más información relevante sobre el servicio aquí -->
+    </ion-card-content>
+  </ion-card>
+  
 </ion-content>
